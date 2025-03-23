@@ -1,0 +1,12 @@
+@RestaurantsAPI_HostAddress = http://127.0.0.1:5241
+
+GET {{RestaurantsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{RestaurantsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+

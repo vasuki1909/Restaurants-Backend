@@ -1,0 +1,11 @@
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/bin/Debug/net8.0/Restaurants.Domain.deps.json
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/bin/Debug/net8.0/Restaurants.Domain.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/bin/Debug/net8.0/Restaurants.Domain.pdb
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.AssemblyInfoInputs.cache
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.AssemblyInfo.cs
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.csproj.CoreCompileInputs.cache
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/refint/Restaurants.Domain.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/Restaurants.Domain.pdb
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Domain/obj/Debug/net8.0/ref/Restaurants.Domain.dll
