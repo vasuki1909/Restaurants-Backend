@@ -13,3 +13,4 @@
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Application/obj/Debug/net8.0/refint/Restaurants.Application.dll
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.pdb
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Application/obj/Debug/net8.0/ref/Restaurants.Application.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Application/obj/Debug/net8.0/Restaurants.Application.sourcelink.json

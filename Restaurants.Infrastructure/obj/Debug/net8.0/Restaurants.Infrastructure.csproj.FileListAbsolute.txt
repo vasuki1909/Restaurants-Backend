@@ -17,3 +17,4 @@
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/ref/Restaurants.Infrastructure.dll
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Infrastructure/bin/Debug/net8.0/Restaurants.Infrastructure.runtimeconfig.json
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/Restaurants.Infrastructure.genruntimeconfig.cache
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.Infrastructure/obj/Debug/net8.0/Restaurants.Infrastructure.sourcelink.json

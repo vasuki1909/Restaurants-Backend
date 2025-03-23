@@ -14,16 +14,17 @@ public class DishDto
 
     public int? KiloCalories { get; set; }
 
-    public static DishDto FromEntity(Dish dish)
-    {
-        return new ()
-        {
-            Id = dish.Id,
-            Name = dish.Name,
-            Description = dish.Description,
-            Price = dish.Price,
-            KiloCalories = dish.KiloCalories
-        };
-        
-    }
+    // Replaced by automapper
+    // public static DishDto FromEntity(Dish dish)
+    // {
+    //     return new ()
+    //     {
+    //         Id = dish.Id,
+    //         Name = dish.Name,
+    //         Description = dish.Description,
+    //         Price = dish.Price,
+    //         KiloCalories = dish.KiloCalories
+    //     };
+    //     
+    // }
 }

@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "10IE+YOOEHY=",
+  "dgSpecHash": "0+YY+VcaJ90=",
   "success": true,
   "projectFilePath": "/Users/vasuki/RiderProjects/Restaurants/Restaurants.Application/Restaurants.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/vasuki/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/vasuki/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/vasuki/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/Users/vasuki/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/vasuki/.nuget/packages/microsoft.extensions.options/8.0.0/microsoft.extensions.options.8.0.0.nupkg.sha512",
     "/Users/vasuki/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512"
   ],
   "logs": []

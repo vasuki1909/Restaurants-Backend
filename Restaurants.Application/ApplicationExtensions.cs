@@ -10,5 +10,7 @@ public static class ApplicationExtensions
     public static void AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<IRestaurantsService, RestaurantsService>();
+        
+        services.AddAutoMapper(typeof(ApplicationExtensions).Assembly);
     }
 }
