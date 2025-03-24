@@ -24,6 +24,5 @@ public class RestaurantsDbContext(DbContextOptions<RestaurantsDbContext> options
             .HasMany(dish => dish.Dishes) // A Restaurant has many Dishes
             .WithOne() // Each Dish belongs to one Restaurant
             .HasForeignKey(dish => dish.RestaurantId); // Foreign Key is RestaurantId in the Dish table
-        
     }
 }

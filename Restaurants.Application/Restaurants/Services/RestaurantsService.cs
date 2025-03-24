@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.Extensions.Logging;
 using Restaurants.Application.Restaurants.Dtos;
 using Restaurants.Application.Restaurants.Services.Interfaces;
+using Restaurants.Domain.Entities;
 using Restaurants.Domain.Repositories;
 
 namespace Restaurants.Application.Restaurants.Services;
@@ -24,10 +25,20 @@ public class RestaurantsService(IRestaurantsRepository restaurantsRepository, IL
     { 
         logger.LogInformation($"Getting restaurant by {id}");
         var restaurants =  await restaurantsRepository.GetById(id);
-        var restaurantsDto = mapper.Map<RestaurantsDto?>(restaurants);
+        var restaurantsDto = mapper.Map<RestaurantsDto?>(restaurants );
+                                    //destination      // souce
+        return restaurantsDto;
        // var restaurantsDto = RestaurantsDto.FromEntity(restaurants); // (r => RestaurantsDto.FromEntity(r));
 
         return restaurantsDto;
     }
-    
+
+    public async Task<int> CreateRestaurant(CreateRestaurantDto restaurantdto)
+    {
+        logger.LogInformation($"Creating new restaurant {restaurantdto.Name}");
+            // this will not take the infrastructure as a parameter as the infra model deoesnt know naythign baout the dto
+            var restaurant = mapper.Map<Restaurant>(restaurantdto);
+        int id = await restaurantsRepository.Create(restaurant);
+        return id;
+    }
 }
