@@ -145,3 +145,7 @@
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaura.7AF479EB.Up2Date
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.API/bin/Debug/net8.0/AutoMapper.dll
 /Users/vasuki/RiderProjects/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaurants.API.sourcelink.json
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.API/bin/Debug/net8.0/FluentValidation.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/vasuki/RiderProjects/Restaurants/Restaurants.API/obj/Debug/net8.0/Restaurants.API.MvcApplicationPartsAssemblyInfo.cs
