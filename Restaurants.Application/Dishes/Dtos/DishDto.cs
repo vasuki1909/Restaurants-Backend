@@ -15,6 +15,7 @@ public class DishDto
     public int? KiloCalories { get; set; }
 
     // Replaced by automapper
+    //manual mapping
     // public static DishDto FromEntity(Dish dish)
     // {
     //     return new ()

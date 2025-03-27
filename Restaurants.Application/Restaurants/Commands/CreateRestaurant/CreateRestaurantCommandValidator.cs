@@ -1,9 +1,8 @@
 using FluentValidation;
-using Restaurants.Application.Restaurants.Dtos;
 
-namespace Restaurants.Application.Restaurants.Validators;
+namespace Restaurants.Application.Restaurants.Commands.CreateRestaurant;
 
-public class CreateRestaurantDtoValidator : AbstractValidator<CreateRestaurantDto>
+public class CreateRestaurantDtoValidator : AbstractValidator<CreateRestaurantCommand>
 {
     
     private readonly List<string> validCategpry =
