@@ -10,4 +10,6 @@ public interface IRestaurantsRepository
     public Task<Restaurant?> GetById(int id);
     
     public Task<int> Create(Restaurant restaurant);
+
+    public Task<bool> Delete(int id);
 }

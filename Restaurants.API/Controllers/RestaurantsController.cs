@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Restaurants.Application.Restaurants.Commands.CreateRestaurant;
+using Restaurants.Application.Restaurants.Commands.DeleteRestaurant;
 using Restaurants.Application.Restaurants.Queries.GetAllRestaurants;
 using Restaurants.Application.Restaurants.Queries.GetRestaurantById;
 
@@ -33,6 +34,16 @@ public class RestaurantsController(IMediator mediator) : ControllerBase
         var restaurantId = await mediator.Send(restaurant);
         
         return CreatedAtAction(nameof(GetRestaurantsByRestaurantId), new { id = restaurantId }, restaurantId);
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteRestaurantsByRestaurantId(int id)
+    {
+        bool isDeleted = await mediator.Send(new DeleteRestaurantCommand(id));
+        if (isDeleted)
+            return NoContent();
+
+        return NotFound();
     }
     
 }
