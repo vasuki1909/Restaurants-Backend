@@ -12,4 +12,6 @@ public interface IRestaurantsRepository
     public Task<int> Create(Restaurant restaurant);
 
     public Task<bool> Delete(int id);
+
+    public Task SaveChanges();
 }

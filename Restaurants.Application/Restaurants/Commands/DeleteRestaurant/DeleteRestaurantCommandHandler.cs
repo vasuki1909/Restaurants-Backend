@@ -12,7 +12,5 @@ public class DeleteRestaurantCommandHandler(ILogger<DeleteRestaurantCommandHandl
 
         var isDeleted = await restaurantsRepository.Delete(request.id);
         return isDeleted;
-
-
     }
 }

@@ -36,4 +36,9 @@ public class RestaurantsRepository(RestaurantsDbContext dbContext) : IRestaurant
         await dbContext.SaveChangesAsync();
         return true;
     }
+    
+    public async Task SaveChanges()
+    {
+        await dbContext.SaveChangesAsync();
+    }
 }
