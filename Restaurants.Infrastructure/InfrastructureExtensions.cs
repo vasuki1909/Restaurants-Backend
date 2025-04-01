@@ -11,7 +11,8 @@ public static class InfrastructureExtensions
     public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<RestaurantsDbContext>(options => options.UseSqlServer(
-            configuration.GetConnectionString("RestaurantsDb")));
+            configuration.GetConnectionString("RestaurantsDb"))
+            .EnableSensitiveDataLogging());
 
         services.AddScoped<ISeeder, Seeder.Seeder>();   // add dbcontext adds the db context as coped dependency by default so we also do that for the seeder
         services.AddScoped<IRestaurantsRepository, RestaurantsRepository>();
