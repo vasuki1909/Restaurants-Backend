@@ -361,3 +361,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Ignore DLLs and PDBs
+*.dll
+*.pdb
+
+# Ignore NuGet-generated files
+*.nuget.g
+.nuget/
+
+# Ignore cache and build artifacts
+*.cache
+bin/
+obj/
