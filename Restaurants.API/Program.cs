@@ -2,7 +2,6 @@ using Restaurants.API.Middlewares;
 using Restaurants.Application;
 using Restaurants.Infrastructure;
 using Serilog;
-using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ErrorHandlingMiddleware>();
+
+builder.Services.AddScoped<TimeLoggingMiddleware>();
 
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -28,6 +29,7 @@ var seeder = scope.ServiceProvider.GetRequiredService<ISeeder>();
 await seeder.Seed();
 
 app.UseMiddleware<ErrorHandlingMiddleware>();
+app.UseMiddleware<TimeLoggingMiddleware>();
 
 // To capture the logs about our executed request we can use
 app.UseSerilogRequestLogging();
