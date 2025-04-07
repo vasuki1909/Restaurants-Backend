@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Restaurants.Application.Exceptions;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Repositories;
 
@@ -28,13 +29,12 @@ public class RestaurantsRepository(RestaurantsDbContext dbContext) : IRestaurant
         return restaurant.Id;
     }
 
-    public async Task<bool> Delete(int id)
+    public async Task Delete(int id)
     {
         var restaurant = await dbContext.Restaurants.FindAsync(id);
-        if (restaurant == null) return false;
+        if (restaurant == null) throw new NotFoundException(nameof(Restaurants), id.ToString());
         dbContext.Restaurants.Remove(restaurant);
         await dbContext.SaveChangesAsync();
-        return true;
     }
     
     public async Task SaveChanges()
