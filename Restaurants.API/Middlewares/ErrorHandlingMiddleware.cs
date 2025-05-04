@@ -13,7 +13,7 @@ public class ErrorHandlingMiddleware(ILogger<ErrorHandlingMiddleware> logger) :I
         {
             context.Response.StatusCode = 404;
             await context.Response.WriteAsync(exception.Message);
-        }
+        } 
         catch (Exception e)
         {
             logger.LogError(e.Message);

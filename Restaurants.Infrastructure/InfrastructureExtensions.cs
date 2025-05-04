@@ -16,6 +16,7 @@ public static class InfrastructureExtensions
 
         services.AddScoped<ISeeder, Seeder.Seeder>();   // add dbcontext adds the db context as coped dependency by default so we also do that for the seeder
         services.AddScoped<IRestaurantsRepository, RestaurantsRepository>();
+        services.AddScoped<IDishesRepository, DishesRepository>();
     }
     
 }
