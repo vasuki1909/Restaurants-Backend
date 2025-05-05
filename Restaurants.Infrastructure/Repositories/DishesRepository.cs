@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Restaurants.Application.Exceptions;
 using Restaurants.Domain.Entities;
 using Restaurants.Domain.Repositories;
 
@@ -17,5 +18,11 @@ public class DishesRepository(RestaurantsDbContext dbContext): IDishesRepository
     {
         IEnumerable<Dish> dishes = await dbContext.Dishes.Where(x => x.RestaurantId == restaurantId).ToListAsync();
         return dishes;
+    }
+    
+    public async Task RemoveAllDishesByRestaurantId(IEnumerable<Dish> dishes)
+    {
+        dbContext.Dishes.RemoveRange(dishes);
+        await dbContext.SaveChangesAsync();
     }
 }
